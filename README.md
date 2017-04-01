@@ -4,10 +4,10 @@ Prerequest nodejs must be installed in your local machine in order to run the de
 
 steps to be followed:
 1. git clone https://github.com/sajankumar/smavatask_sajankumarvijayan.git
-2  cd smavatask_sajankumarvijayan/creative
-3  npm install
-4  npm start for development env
-5  npm run build for production 
+2.  cd smavatask_sajankumarvijayan/creative
+3. npm install
+4.  npm start for development env
+5.  npm run build for production 
 
 You can find my source code under creative/src/components
 
