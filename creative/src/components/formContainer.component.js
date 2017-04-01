@@ -95,7 +95,6 @@ class FormContainer extends Component {
      Event handker for input fields this will invoke when user out from focus on input field.
     */
     validate(evt) {
-        console.log("value", evt.target.value);
         let currentTargetName = evt.target.name;
         let userInput = evt.target.value;
         if(currentTargetName !== 'IBAN' && currentTargetName !== 'Bank name') {
@@ -150,8 +149,6 @@ class FormContainer extends Component {
     addBank() {
         this.bankAccountCount++;
         this.bank.accounts.push(this.bankAccountCount);
-        console.log("add length", this.bank.accounts.length);
-        console.log(this.bankAccountCount);
         this.bank.isAdded = true;
         this.setState({bank: this.bank});
     };
@@ -160,9 +157,11 @@ class FormContainer extends Component {
     */
     removeBankAccount(evt) {
         let currentId = evt.target.id;
-        this.bank.accounts.splice(this.bank.accounts.indexOf(currentId), 1);
-        console.log("remove length", this.bank.accounts.length);
-        this.setState({bank: this.bank});
+        let index = this.bank.accounts.indexOf(parseInt(currentId));
+        if(index > -1) {
+            this.bank.accounts.splice(index, 1);
+            this.setState({bank: this.bank});
+        }
         if(this.bank.accounts.length === 0) {
             this.bankAccountCount = -1;
         }
@@ -221,7 +220,6 @@ class FormContainer extends Component {
                 }
                 this.value.bankAccounts.push({'iban': iban.value, 'bankName': bankName.value});
             });
-            console.log("my msg ", msg);
             if(msg !== '') {
                 this.setState({error: this.inputErrors});
                 return;
