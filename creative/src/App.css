@@ -1,0 +1,61 @@
+.container {
+  width: 35%;
+}
+.container .form .bankAccountRequired {
+  color: #cb2431;
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
+
+.container .header {
+  text-align: center;
+  font-weight: 600;
+}
+.container h1 {
+  font-weight: 600;
+}
+
+
+.container .inputContainer {
+  padding-top: 10px;
+}
+
+.banks .inputContainer .ibanWrapper .group span {
+  float: right;
+  position: relative;
+  top: -30px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.container .inputContainer label {
+  margin-bottom: 0;
+}
+.container .inputContainer .text-danger {
+  color: #cb2431;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.container .buttonContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.container .buttonContainer button {
+  display: block;
+}
+
+.container .buttonContainer .bankAccount {
+  position: relative;
+  top: 30px;
+  left: 32%;
+}
+
+.container .buttonContainer .submit {
+  position: relative;
+  top: 50px;
+  left: 80%;
+}
