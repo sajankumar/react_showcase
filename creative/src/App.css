@@ -1,5 +1,5 @@
 .container {
-  width: 35%;
+  width: 100%;
 }
 .container .form .bankAccountRequired {
   color: #cb2431;
@@ -20,6 +20,9 @@
 
 .container .inputContainer {
   padding-top: 10px;
+}
+.container .inputContainer .form-control {
+  width: 92%;
 }
 
 .banks .inputContainer .ibanWrapper .group span {
@@ -49,13 +52,54 @@
 }
 
 .container .buttonContainer .bankAccount {
-  position: relative;
-  top: 30px;
-  left: 32%;
+  width: 92%;
+  margin-bottom: 10px;
 }
 
 .container .buttonContainer .submit {
-  position: relative;
-  top: 50px;
-  left: 80%;
+  width: 92%;
+}
+
+/*cell phone device*/
+@media (min-width: 768px) {
+  .container .buttonContainer .bankAccount {
+    position: relative;
+    top: 30px;
+    left: 40%;
+    width: auto;
+  }
+
+  .container .buttonContainer .submit {
+    position: relative;
+    top: 50px;
+    left: 80%;
+    width: auto;
+  }
+}
+
+/*tablet device*/
+@media (min-width: 992px) {
+  .container {
+    width: 60%;
+  }
+  .container .buttonContainer .bankAccount {
+    left: 32%;
+  }
+
+  .container .buttonContainer .submit {
+    left: 75%;
+  }
+}
+/*larger screen desktop*/
+@media (min-width: 1200px) {
+  .container {
+    width: 40%;
+  }
+  .container .buttonContainer .bankAccount {
+    left: 37%;
+  }
+
+  .container .buttonContainer .submit {
+    left: 77%;
+  }
 }
