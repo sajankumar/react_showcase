@@ -9,6 +9,10 @@ steps to be followed:
 4.  npm start for development env
 5.  npm run build for production 
 
-You can find my source code under creative/src/components
+Task 1 and 2 you can find it under warmup_task folder
+
+Task 3:
+You can find my source code for 'creative registration' form under creative/src/components
+
 
 Note: I have uploaded this creative registration form task for quick demo in my website http://sajankumarvijayan.com/task/build/
